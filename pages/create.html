@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ByteWriter - Create</title>
+    <link rel="icon" href="../static/favicon.ico">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">ByteWriter</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Create</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Explore</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="explore.html">Explore Page</a>
+                                <a class="dropdown-item" href="trending.html">Trending Blogs</a>
+                                <a class="dropdown-item" href="friends.html">Friends' Blogs</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0 justify-content-end">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="profile.html">
+                                Profile <span class="badge bg-secondary">@username2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="notifications.html">
+                                Notifications <span class="badge bg-secondary text-black">273</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2 pr-3" type="text" placeholder="Search anything" />
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
+                            <a class="nav-link" href="search.html">Search</a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="mt-3">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="profile.html">Profile</a></li>
+                        <li class="breadcrumb-item active text-decoration-underline" aria-current="page">Create</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="mt-4 container col-md-6 text-wrap">
+                <div class="h2">Create your new article for your blog</div>
+            </div>
+            <div class="mt-4 container col-md-6">
+                <form id="article-form">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="@">@</span>
+                        <input type="text" class="form-control" placeholder="Article Authors' Username"
+                            aria-label="Username" aria-describedby="@">
+                    </div>
+                    <div class="mb-3">
+                        <label for="ArticleDescription" class="form-label">Article Description</label>
+                        <textarea class="form-control" name="ArticleDescription" id="ArticleDescription"
+                            rows="2"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ArticleContent" class="form-label">Article Content</label>
+                        <textarea class="form-control" name="ArticleContent" id="ArticleContent" rows="7"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ArticleAttachment" class="form-label">Article Attachments</label>
+                        <input type="file" class="form-control" name="ArticleAttachment" id="ArticleAttachment" multiple
+                            accept=".jpg,.jpeg,.png">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create your article</button>
+                </form>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="features.html" class="nav-link px-2 text-body-secondary">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="support.html" class="nav-link px-2 text-body-secondary">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link px-2 text-body-secondary">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link px-2 text-body-secondary">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link px-2 text-body-secondary">About</a>
+                    </li>
+                </ul>
+                <p class="text-center text-body-secondary h6">© 2024 ByteWriter, Inc.<br>All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
